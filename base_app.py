@@ -4,8 +4,7 @@ import time
 from loguru import logger
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-# from selenium.webdriver.common.action_chains import ActionChains
-# from selenium.webdriver.common.keys import Keys
+
 
 logger.add(sys.stderr, format="{time} {level} {message}", colorize=True, filter="my_module", level="INFO")
 new_level = logger.level("START", no=38, color="<yellow>")
